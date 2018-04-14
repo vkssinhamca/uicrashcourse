@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Storyline-Light";
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/Storyline-Light.ttf);
+}
+@font-face {
+	font-family: "Storyline-Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/Storyline-Bold.ttf);
+}
+@font-face {
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/Arial.ttf);
+}
+
+.form_back{
+background-color: #000000;
+padding: 20px;
+}
+.form{
+background-color: #ffffff;
+left: 30px;
+padding: 20px;
+width: 30%;
+margin-left: 35%;
+border-radius: 5px;
+}
+.noindent{
+font-size: 14px;
+line-height: 16px;
+font-family: "Storyline-Light";
+indent: 0px;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+.text_box{
+border-radius: 4px;
+border: 1px solid #d1d5da;
+}
+.note{
+font-family: "Storyline-Light";
+font-size: 12px;
+line-height: 16px;
+}
+.sub_back{
+background-color:#2cb54b;
+padding: 5px;
+border-radius: 6px;
+margin-top:20px;
+}
+.submit{
+font-family: "Arial";
+font size: 14px;
+line-height: 8px;
+text-align: center;
+color: #ffffff;}
