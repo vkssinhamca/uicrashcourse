@@ -82,10 +82,10 @@ p.sub-header {
     margin: 0;
 }
 
-section.container {width:1024px; margin: 0 auto;}
+.container {width:1024px; margin: 0 auto;}
 
 .enq {
-    padding: 36px 20px 20px 66px;
+    padding: 31px 20px 32px 66px;
     position: relative;
     font-size: 14px;
 }
@@ -99,7 +99,7 @@ i.phone-ico {
     text-indent: -100px;
     position: absolute;
     left: 0;
-    top: 24px;
+    top: 19px;
 }
 
 span.sm-text {
@@ -132,6 +132,7 @@ a {
 
 .table {
     display: table;
+    width: 100%;
 }
 
 .table-row {
@@ -140,6 +141,10 @@ a {
 
 .table-cell {
     display: table-cell;
+}
+
+.table-cell:first-child{
+	width: 265px;
 }
 
 .list-unstyle {
@@ -183,36 +188,57 @@ a {
 
 .faq-head {
     font-size: 24px;
-    font-weight: 100;
+    padding: 7px 0 4px 0;
+    font-weight: 600;
 }
 .accordion-list {
 	list-style-type: none;
 }
-.accordion-list li{
-	border-bottom: 1px solid #d7d7d7;
-	padding-left: 50px;
+.accordion-list li {
+    padding: 20px 0;
+	}
+.accordion-list li +li {
+	border-top: 1px solid #d7d7d7;
+}
+.accordion-list li .question{
+	padding-left: 40px;
 	position: relative;
+	padding-bottom: 10px;
+	cursor: pointer;
 }
 
+.accordion-list li .answer {
+    padding-left: 40px;
+    display: none;
+}
 
-.accordion-list li:before, .accordion-list li:after {
+.accordion-list li .question:before {
 	content: '';
-	width: 10px;
-	height: 2px;
+	width: 7px;
+	height: 7px;
 	display: inline-block;
-	background-color: #000;
 	position: absolute;
 	left: 0;
+	top: 4px;
+	border-style: solid;
+	border-width: 1px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: #333;
+	border-top-color: #333;
 }
-.accordion-list li:before{
 
-transform: rotate(45deg);
-
+.accordion-list li .question:before{
+	transform: rotate(45deg);
+	transition: transform 0.5s ease-in; 
 }
-	.accordion-list li:after{
+.accordion-list li.active .question:before{
+	transform: rotate(135deg);
+}
 
-transform: rotate(-45deg);
-
-top: 6px;
-
+.bg-type-1 {
+	background-color: #fcfcfc;
+}
+.bdr-btm-type-1{
+	border-bottom:1px solid #ebebeb;
 }
