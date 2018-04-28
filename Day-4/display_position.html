@@ -1,0 +1,108 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Css Display</title>
+	<!-- https://www.youtube.com/watch?v=JJSoEo8JSnc&t=998s  -->
+	<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div style="display: inline-block; width: 200px; height: 100px; background-color: red; margin-bottom: 10px">asdfadfasdf</div>
+	<div style="display: inline-block; width: 200px; height: 100px; background-color: red;">asdfasdf</div>
+
+
+	<section>
+		<div class="flexbox">
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+			<a href="" class="tbl-col">click me</a>
+		</div>
+		<div class="flexbox">
+			<div class="img-responsive"><img src="https://media.nature.com/w1172/magazine-assets/d41586-018-04966-9/d41586-018-04966-9_15719152.jpg"/></div>
+			<div>
+				<p>Researchers are heading to some of the most remote spots on Earth — from the Tibetan Plateau to an island in the sub-Antarctic ocean — to try to capture an enigmatic radio signal from the early Universe. This grand search, which could even involve a mission to the Moon, includes some of the first experiments to follow up on a surprise announcement in February that astronomers had seen evidence of the Universe’s first stars lighting up1, a moment known as the cosmic dawn.</p>
+
+				<p>And as teams of observers try to replicate those findings in the few places on Earth that are relatively undisturbed by radio interference, theorists are struggling to make sense of the signal. “The signal does not look like anything we expected”, says Abraham Loeb, an astrophysicist at Harvard University in Cambridge, Massachusetts.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<style>
+		.flexbox { 
+			display: flex;
+			flex-direction: row;
+			/* flex-wrap: wrap-reverse; */
+			justify-content: space-around;
+		 }
+		 .tbl-col {
+			border: 1px solid red;
+			padding: 10px;
+			width: 200px;
+			height: 200px;
+		 }
+		 .img-responsive{
+			/* flex-grow: 2; */ 
+			order: 0;
+
+		 }
+		 .img-responsive img {
+		 	max-width: 100%;
+		 }
+
+		 @media only screen and (max-width: 768px){
+			.img-responsive {
+				order: 1;
+			}
+		 }
+	</style>
+
+
+		<ul class="flex-container">
+		  <li class="flex-item">1</li>
+		  <li class="flex-item">2</li>
+		  <li class="flex-item">3</li>
+		  <li class="flex-item">4</li>
+		  <li class="flex-item">5</li>
+		  <li class="flex-item">6</li>
+		</ul>
+
+		<style>
+				.flex-container {
+				  padding: 0;
+				  margin: 0 auto;
+				  list-style: none;
+				  
+				  display: -webkit-box;
+				  display: -moz-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  
+				  -webkit-flex-flow: row wrap;
+				  justify-content: space-around;
+				  max-width: 1024px;
+				}
+
+				.flex-item {
+				  background: tomato;
+				  padding: 5px;
+				  width: 200px;
+				  height: 150px;
+				  margin-top: 10px;
+				  
+				  line-height: 150px;
+				  color: white;
+				  font-weight: bold;
+				  font-size: 3em;
+				  text-align: center;
+				}
+		</style>
+
+</body>
+</html>
