@@ -1,9 +1,18 @@
 @charset "utf-8";
 @import url('./normalize.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: 'scream_realregular';
+    src: url('../fonts/scream_real-webfont.woff2') format('woff2'),
+         url('../fonts/scream_real-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body{
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'scream_realregular', sans-serif; */
+	 font-family: 'arial', sans-serif; 
 }
 form {
 	background-color: black;
@@ -67,4 +76,52 @@ input[type='text'], input[type='email'], input[type=password] {
 		color:#000;
 		border:1px solid #d7d7d7; 
 	}
+}
+
+
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-style: normal;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "chaparral-pro";
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  transition: color .5s linear;
+}
+
+.smcp span {
+  -webkit-font-feature-settings: "smcp" 1;
+          font-feature-settings: "smcp" 1;
+}
+.smcp span {
+  color: #ff3333;
+}
+
+.small {
+  font-size: 15px;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  margin-left: 10px;
+}
+button:after {
+  content: " on";
+}
+button.on:after {
+  content: " off";
 }
