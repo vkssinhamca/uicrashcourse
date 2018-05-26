@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="animation" style="background: red; width: 100px; height: 100px;"></div>
+
+<style>
+	.animation {
+		animation: animateme 6s ease-in 2s 5 ;
+		position: absolute;
+		left: calc(50vw - 50px);
+		border-radius: 50%;
+		top:calc(50vh - 50px); 
+	}
+
+	/* @keyframes animateme { 
+		from {
+			left: 0;
+		}
+	
+		to {
+			right:0; 
+		}
+	 } */
+
+	 @keyframes animateme { 
+		0% {
+		}
+		50% {
+			width: 50vw;
+			height: 50vh;
+		}
+	 }
+
+</style>
+
+</body>
+</html>
