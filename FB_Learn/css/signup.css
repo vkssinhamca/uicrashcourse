@@ -53,3 +53,31 @@ body {
   color:#ccc;
   font-weight: 400;
 }
+.birth {
+    margin-top: 15px;
+}
+.birth-select {
+    margin-top: 5px;
+  }
+  .gender{
+    margin-left: 35px;
+  }
+  .small-text{
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a{
+    text-decoration: none;
+  }
+  .input-row{
+    margin-top:15px;
+      }
+.input-button{
+font-family: 'Arial', sans-serif;
+  font-weight: bolder;
+  border-radius: 8px;
+    background-color: #5d974a;
+    color: FFFFFF;
+  padding: 10px 60px 10px 60px;"
+}
