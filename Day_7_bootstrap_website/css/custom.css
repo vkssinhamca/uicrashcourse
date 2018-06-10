@@ -1,0 +1,33 @@
+.bg-grey {
+	background: #e3e3e3;
+}
+
+.stripper {
+    padding: 5px;
+}
+.inline-block {
+	display: inline-block;
+}
+.ml-15{
+	margin-left: 15px;
+}
+
+.vertical-bottom{
+	vertical-align: bottom;
+}
+.nav-bg-primary {
+	background: #0f3f6a;
+	border-radius: 0px !important;
+}
+
+.nav-bg-primary li.active, .nav-bg-primary a:hover, .dropdown-toggle:hover  {
+	background: #000!important; 
+}
+
+.nav-bg-primary li.active a, .nav-bg-primary li.active:hover a, dropdown-toggle:hover a, dropdown-toggle:hover {
+	color: #fff;
+}
+
+.nav-bg-primary a {
+	color:#fff;
+}
