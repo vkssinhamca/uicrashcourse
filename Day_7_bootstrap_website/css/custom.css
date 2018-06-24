@@ -23,6 +23,9 @@
 .nav-bg-primary li.active, .nav-bg-primary a:hover, .dropdown-toggle:hover  {
 	background: #000!important; 
 }
+.txt-bold{
+	font-weight: bolder;
+}
 
 .nav-bg-primary li.active a, .nav-bg-primary li.active:hover a, dropdown-toggle:hover a, dropdown-toggle:hover {
 	color: #fff;
@@ -30,4 +33,49 @@
 
 .nav-bg-primary a {
 	color:#fff;
+}
+.adhar_online{
+font-size: 20px;
+    float: left;
+    color: #2e4b90;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0 0 0 15px;
+        border-bottom: 1px solid #000;
+    }
+.adhar_online_border{
+	border-top: 1px solid #000;
+}
+.width100 {
+    width: 100%!important;
+}
+.adhar_enrol{
+	list-style-type: none !important;
+	}
+.blueHead {
+    background: #54bac3;
+}
+.pinkHead {
+    background: #ec7480;
+    }
+.purpleHead {
+        background: #a08ac0;
+}
+.blueHead, .pinkHead, .purpleHead {
+    color: #000;
+    font-size: 13px;
+    height: 24px;
+    width: 100%;
+    font-weight: 700;
+    padding: 5px 0px 5px 10px;
+    margin-left: 25px;
+}
+.marginTop20 {
+    margin-top: 20px!important;
+}
+ul.adhar_enrol li{
+	line-height: 18px;
+	margin-bottom: 10px;
+	font-size: 12px;
 }
