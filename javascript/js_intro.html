@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	<div id="abc">
+		adsfjklasdfklas dkfl alkdsf asdf
+	</div>
+	<h1>This is header 1</h1>
+	<h1>This is header one 1</h1>
+	<h1>This is header two 1</h1>
+	<h1>This is header three 1</h1>
+	<h2 class="level-2">This is header 2</h2>
+	<h3>This is header 3</h3>
+
+	<script type="application/javascript">
+		/*document.write('<h1>hello world</h1>');
+
+		alert('hello world');
+
+		console.log('console msg');
+		*/
+		 document.getElementById('abc').innerHTML = '<p>We have to a pass a msg</p>';
+
+		 console.log(document.getElementsByTagName('h1').item(1));
+		 console.log(document.getElementsByClassName('level-2')[0].innerHTML);
+		 console.log(document.getElementsByClassName('level-2').item(0).innerHTML);
+
+		 console.log(document.getElementById('abc').innerHTML);
+		console.log(document.getElementsByTagName('h2')[0].innerHTML)
+
+	</script>
+</body>
+</html>
