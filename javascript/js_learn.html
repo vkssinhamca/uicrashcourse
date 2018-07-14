@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	<div id="123">
+		My first learn javascript
+	</div>	
+	<h1>This is header 1</h1>
+	<h1>This is header 2</h1>
+	<h1>This is header 3</h1>
+	<h1>This is header 4</h1>
+	<h2 class="level-2">This is header 5</h1>
+	<h3>This is header three</h1>
+	<h4>This is header four</h1>
+	<h5 class="level-5">This is header five</h5>
+	<h6>This is header six</h6>
+	<script type="application/javascript">
+	 /*document.write('<h1>Hellow world</h1>')
+	 alert('Hellow world')
+	 console.log('console message')*/
+	 document.getElementById('123').innerHTML = '<p>We have to a pass a msg</p>';
+	 console.log(document.getElementsByTagName('h1').item(0));
+	 console.log(document.getElementsByClassName('level-5')[0].innerHTML)
+	 console.log(document.getElementsByClassName('level-2').item(0).innerHTML);
+	 console.log(document.getElementById('123').innerHTML);
+	</script>
+</body>
+</html>
