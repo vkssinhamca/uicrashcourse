@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	<h1>Prompt ParseInt ParseFloat isNaN</h1>
+
+	<p>Prompt: It uses for taking a input from User.</p>
+	<p>Age is getting by prompt <span id="userAge">unknown</span></p>
+	<script type="application/javascript">
+	
+	var userAge = prompt("Enter the age.", "10");
+	
+	console.log(userAge);
+	
+
+	// userAge = parseInt(userAge);
+
+	 if(isNaN(userAge)){
+	 	alert('Letter is not accepted');
+	 }
+	 else{
+		document.getElementById('userAge').innerHTML = userAge;
+	 }
+
+
+	console.log("userAge ==>" + userAge)
+
+
+	var x = "10.2023123";
+	console.log(typeof(x));
+
+
+	x = parseFloat(x)
+	console.log('ParseFloat => ', x);
+	</script>
+</body>
+</html>
