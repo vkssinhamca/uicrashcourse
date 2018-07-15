@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	<p id="UserAge"></p>
+	
+	<script type="application/javascript">
+		var UserAge = prompt("Enter your age", "")
+			console.log(UserAge);
+			UserAge = parseInt(UserAge);
+			if (isNaN(UserAge)){
+				alert('This is not valid number, please pass the valid number');
+			}
+			else if(UserAge >= 18) {
+				document.getElementById('UserAge').innerHTML = 'You are eligable for Voting';
+
+			}
+			else {
+				document.getElementById('UserAge').innerHTML = 'You are minnor';
+			}
+
+			console.log("UserAge ==>" + UserAge);
+
+
+			
+	</script>
+
+</body>
+</html>
