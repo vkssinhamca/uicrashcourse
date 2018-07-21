@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	
+<div id="printUserdata"></div>	
+
+<script type="application/javascript">
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+	var uervar = prompt('Enter Value', "")
+	console.log(uervar);
+	uervar = parseInt(uervar);
+	if(isNaN(uervar) > 11){
+		alert('This is not a valid number');
+		}
+		
+		else {
+		document.getElementById('printUserdata').innerHTML = months[uervar];
+	}
+	
+</script>
+
+
+
+
+
+</body>
+</html>
+
