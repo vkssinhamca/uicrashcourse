@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");  
+        div.animate({top: '0px', duration: 400}, {complete: function(){
+            div.animate({right: '0px', duration: 400}, {complete: function(){
+            div.animate({top: '480px', duration: 400}, {complete: function(){
+            div.animate({left: '0px', duration: 400}, {complete: function(){
+            
+            div.removeAttr('style').detatch();
+
+        }});
+        }});
+        }});
+        }});
+        
+        
+    });
+});
+</script> 
+<style>
+div{
+position:absolute;
+bottom:0px;
+}
+</style>
+</head>
+<body style="position:relative;height:600px;">
+
+<button>Start Animation</button>
+
+<!--<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>-->
+
+<div><img src="C:\Users\ranaj\Desktop\2.jpg" /></div>
+</body>
+</html>

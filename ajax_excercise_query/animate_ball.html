@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animate demo</title>
+  <style>
+  div {
+    position: absolute;
+    background-color: #abc;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <button id="top">top</button>
+ <button id="right">right</button>
+ <button id="bottom">bottom</button>
+ <button id="left">left</button>
+
+
+<div class="block"></div>
+ 
+<script>
+$( "#top" ).click(function() {
+  $( ".block" ).animate({ "top": "+=0px" }, "slow" );
+});
+
+$( "#right" ).click(function() {
+  $( ".block" ).animate({ "left": "+=50px" }, "slow" );
+});
+
+$( "#bottom" ).click(function() {
+  $( ".block" ).animate({ "bottom": "+=50px" }, "slow" );
+});
+
+
+ 
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
+});
+</script>
+ 
+</body>
+</html>
