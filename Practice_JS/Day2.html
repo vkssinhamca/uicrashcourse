@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+<p id="UserAmount"></p>
+
+
+<script type="application/javascript">
+	var UserAmount = prompt("Enter a valid Amount", "");
+	console.log (UserAmount);
+	UserAmount = parseInt('UserAmount');
+	if (isNaN(UserAmount)){
+       alert('This is not a valid Amount, Please enter valid Amount');
+	}
+	else if(UserAmount >= 1000) {
+		document.getElementById('UserAmount').innerHTML = 'You can fill the form';
+	}
+	else {
+		document.getElementById('UserAmount').innerHTML = 'You can not fill the form';
+	}
+	console.log("UserAmount ==>" + UserAmount);
+
+
+</script>
+
+</body>
+</html>
