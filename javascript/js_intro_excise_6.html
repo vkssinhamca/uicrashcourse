@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	
+<button>Show/Hide User Information</button>
+
+<div id="content"></div>
+<script type="application/javascript">
+	var userVisiblity = false;
+	var visiblityStr = '<p>This is for test purpose</p>';
+	document.getElementsByTagName('button')[0].addEventListener("click", function(){
+		userVisiblity = ! userVisiblity;
+		document.getElementById("content").innerHTML = userVisiblity &&visiblityStr;
+
+	})
+
+//addEventsListener
+// ture
+//.innerHtml
+
+
+</script>
+</body> 
+</html>
+
