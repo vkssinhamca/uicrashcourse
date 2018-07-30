@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Intro</title>
+	<title>Exercise 7</title>
 </head>
 <body>
 	
@@ -14,12 +14,22 @@
 	var monthVisiblity = false;
 	var weekVisiblity = false;
 	var yearVisiblity = false;
-
-
-
 	var monthVisiblityStr = '<p>Month is visible</p>';
 	var weekVisiblityStr = '<p>Week is visible</p>';
 	var yearVisiblityStr = '<p>Year is visible</p>';
+
+	document.getElementsByTagName('button')[0].addEventListener("click", function(){
+		monthVisiblity = ! monthVisiblity;
+		document.getElementById("content").innerHTML = monthVisiblity &&monthVisiblityStr;
+	})
+	document.getElementsByTagName('button')[1].addEventListener("click", function(){
+		weekVisiblity = ! weekVisiblity;
+		document.getElementById("content").innerHTML = weekVisiblity &&weekVisiblityStr;
+	})
+	document.getElementsByTagName('button')[2].addEventListener("click", function(){
+		yearVisiblity = ! yearVisiblity;
+		document.getElementById("content").innerHTML = yearVisiblity &&yearVisiblityStr;
+	})
 
 </script>
 </body> 
