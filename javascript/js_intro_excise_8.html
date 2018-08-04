@@ -13,7 +13,7 @@
 <script type="application/javascript">
 	var monthVisiblity = new Array();
 
-	monthVisiblity[0][0][1][0] = 'Year Visiblity';
+	// monthVisiblity[0][0][1][0] = 'Year Visiblity';
 	// .join()
 	// .map()
 	// forEach()
@@ -23,6 +23,14 @@
 	var weekVisiblityStr = '<p>Week is visible</p>';
 	var yearVisiblityStr = '<p>Year is visible</p>';
 
+var btn = document.querySelectorAll('button');
+	btn[0].addEventListener('click', function(){
+		
+		if('Show Month' === this.textContent){
+			document.getElementById('content').innerHTML = monthVisiblityStr; 
+		}
+
+	})
 </script>
 </body> 
 </html>
