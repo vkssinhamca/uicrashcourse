@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+</head>
+<body>
+	<p id="con"></p>
+<script type="text/javascript">
+
+var userName = [{
+	name: 'Pankaj',
+	dobY: '1986',
+	region: 'urban',
+	qualify: 'Graduation'
+},
+{
+	name: 'S Abhishek',
+	dobY: '1992',
+	region: 'rural',
+	qualify: 'Graduation'
+},
+{
+	name: 'Srinath Anoop',
+	dobY: '1992',
+	region: 'rural',
+	qualify: 'Matric'
+},
+{
+	name: 'Kumar Pankaj',
+	dobY: '1986',
+	region: 'rural',
+	qualify: 'Graduation'
+},
+{
+	name: 'Abhishek',
+	dobY: '1992',
+	region: 'urban',
+	qualify: 'Graduation'
+},
+{
+	name: 'Anoop',
+	dobY: '1982',
+	region: 'rural',
+	qualify: 'Graduation'
+}];
+
+userName.forEach( function(element, index){
+	console.log(element.dobY, element.qualify, element.region) 
+	if((element.dobY <= 1990 && element.qualify == 'Graduation') && (element.region !== 'urban'))
+		{
+			document.write(element.name + " " + element.region + " you are eligible for filling this form.<br/>");
+		}
+	else {
+		document.write(element.name + " " + element.region + " you not are eligible for filling this form.<br/>");
+		}	
+} ) 
+
+
+
+</script>
+
+</body>
+</html>
