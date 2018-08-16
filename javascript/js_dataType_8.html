@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 8</title>
+</head>
+<body>
+	
+
+
+<div id="content"></div>
+<script type="application/javascript">
+// Equation is °C = 5/9 (°F - 32)
+debugger;
+var degFar = parseInt(prompt("Enter a value", ""));
+var degCent;
+
+degCent = 5/9 * (degFar - 32);
+if(isNaN(degFar)){
+    alert('This is not a number')
+}
+else if(degFar > 32){
+document.getElementById('content').innerHTML = 'You are correct number' + '<br>' + degCent;
+}
+else{
+	alert('your number less than 32')
+	document.getElementById('content').innerHTML = degCent;
+
+}
+
+</script>
+</body> 
+</html>
+

@@ -11,7 +11,7 @@ var months = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
  var uservar = prompt('Enter value', "")
  console.log(uservar);
  uservar = parseInt(uservar);
- if(isNaN(uservar) > 6){
+ if(! (isNaN(uservar) ) && (uservar > 6)){
  	alert('This is not a valid number');
  }
  else {
