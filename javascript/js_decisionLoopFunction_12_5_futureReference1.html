@@ -1,0 +1,469 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro</title>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+	</head>
+	<body>
+		<div style="max-width: 600px; margin: 0 auto; ">
+			<ul style="list-style: none; font-family: arial, helvetica, sans-serif" id="newsItems">
+			</ul>
+		</div>
+		<script type="text/javascript">
+		var articles = [
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Michelle Castillo",
+		"title": "Professional cornhole has turned a tailgating game into a hit TV sport – and it's expanding globally",
+		"description": "Tailgating's official sport cornhole has been airing on TV, at times becoming the most viewed sport, ahead of baseball and the Tour de France",
+		"url": "https://www.cnbc.com/2018/08/18/cornhole-wants-to-make-it-to-the-big-leagues.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/17/105403628-1534531219615gettyimages-603577068.1910x1000.jpeg",
+		"publishedAt": "2018-08-18T21:07:28Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Javier E. David",
+		"title": "White House counsel Don McGahn said to be cooperating extensively with Mueller, may fear Trump set up",
+		"description": "White House counsel Donald McGahn has given the special counsel investigating President Donald Trump's ties to Russia detailed information about the president's conduct in the matter, The New York Times reported on Saturday.",
+		"url": "https://www.cnbc.com/2018/08/18/don-mcgahn-said-to-be-cooperating-with-mueller-in-trump-russia-probe.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/20/104853832-GettyImages-623402212.1910x1000.jpg",
+		"publishedAt": "2018-08-18T19:34:57Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Megan Leonhardt",
+		"title": "Elon Musk: Tesla could produce a $25,000 car in around 3 years",
+		"description": "Elon Musk estimated Tesla could make a cheaper electric car starting at $25,000 in perhaps three years if they worked really hard.",
+		"url": "https://www.cnbc.com/2018/08/18/elon-musk-tesla-could-produce-a-25000-car-in-3-years--.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/07/105382267-1533679302096elon.1910x1000.jpg",
+		"publishedAt": "2018-08-18T16:59:37Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Robert Ferris",
+		"title": "Used car prices are weirdly spiking at world's largest auto auction, and Trump's trade war may be to blame",
+		"description": "The prices at the world's largest used car auction have been better than usual lately, especially since President Donald Trump started pushing for new tariffs on imported vehicles, parts as well as the steel and aluminium used to make cars.",
+		"url": "https://www.cnbc.com/2018/08/17/used-car-prices-are-weirdly-spiking-and-tariffs-may-be-to-blame.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/16/105400802-1534429049017manheim-pa-aerial-image.1910x1000.jpg",
+		"publishedAt": "2018-08-18T16:02:02Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Kate Rooney",
+		"title": "Why crypto investors might want to think twice about giving out their phone numbers",
+		"description": "Hackers are using a method known as “SIM swapping” to steal phone numbers and in some cases, use them to take millions of dollars worth of cryptocurrency.",
+		"url": "https://www.cnbc.com/2018/08/18/crypto-investors-should-rethink-giving-out-their-phone-numbers.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/09/09/103928680-GettyImages-508516555.1910x1000.jpg",
+		"publishedAt": "2018-08-18T15:21:23Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Jillian D'Onfro",
+		"title": "How Google has stepped up its efforts to makes its own tech more accessible to the disabled",
+		"description": "In recent years, Google has become much more deliberate about baking accessibility into all its products and making technology to help disabled people navigate the world around them.",
+		"url": "https://www.cnbc.com/2018/08/18/google-accessibility-advances-and-challenges.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/14/105396637-1534277610219img_20160702_120531.1910x1000.jpg",
+		"publishedAt": "2018-08-18T15:00:53Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Matt Clinch",
+		"title": "Kofi Annan, former UN secretary general, dies aged 80",
+		"description": "Kofi Annan, the former chief of the United Nations who also won the Nobel Peace Prize, has died at the age of 80.",
+		"url": "https://www.cnbc.com/2018/08/18/kofi-annan-former-un-secretary-general-dies-aged-80.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/22/102110952-145897680.1910x1000.jpg",
+		"publishedAt": "2018-08-18T09:43:41Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Stephen Grocer",
+		"title": "Investors betting against Tesla made $1 billion on Friday",
+		"description": "Investors betting against Tesla just got a gift from the company's chief executive, Elon Musk. Musk's emotional interview with The New York Times about the toll the past year has taken on him led to a slide in Tesla's shares that generated more than $1 billio…",
+		"url": "https://www.cnbc.com/2018/08/18/musk-interview-1-billion-gift-to-investors-who-want-tesla-to-fail.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/05/03/105181445-GettyImages-490596004.1910x1000.jpg",
+		"publishedAt": "2018-08-18T04:00:00Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Tae Kim",
+		"title": "Booming Walmart, Cisco results show US economy’s strength is real and broad-based",
+		"description": "Major U.S. companies are confirming the positive macro data by reporting their best financial results in many years.",
+		"url": "https://www.cnbc.com/2018/08/16/booming-walmart-cisco-results-show-us-economys-strength-is-real-and-broad-based.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/11/17/103176135-RTS6KOQ.1910x1000.jpg",
+		"publishedAt": "2018-08-16T16:06:48Z"
+		},
+		{
+		"source": {
+		"id": "cnbc",
+		"name": "CNBC"
+		},
+		"author": "Patti Domm",
+		"title": "This bull market is about to become historic and may have even more room to run",
+		"description": "The U.S. stock market could soon lay claim to being in the longest bull run in modern history, and it is more likely to power on than fizzle as it heads toward its golden years.",
+		"url": "https://www.cnbc.com/2018/08/14/this-could-be-the-longest-bull-market-in-stocks-ever-and-it-still-has-.html",
+		"urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/10/31/104809404-GettyImages-813676714.1910x1000.jpg",
+		"publishedAt": "2018-08-14T19:50:17Z"
+		},
+
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Rajeev Deshpande",
+"title": "Vajpayee shed the Cold War paradigm, reset India-US ties - Times of India",
+"description": "India News: The Pokhran tests led to a more pragmatic understanding of India's nuclear deterrent and a recognition of the need to engage with a stable regional po",
+"url": "http://timesofindia.indiatimes.com/india/vajpayee-shed-the-cold-war-paradigm-reset-indo-us-ties/articleshow/65457073.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457093,width-1070,height-580,imgsize-137932,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T21:50:50Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": null,
+"title": "Kerala off red alert but IMD's rain forecast keeps state on edge - Times of India",
+"description": "India News: No red alert was issued for any of Kerala's rain-ravaged 14 districts for the first time since August 9. The IMD, however, has forecast heavy rains at",
+"url": "http://timesofindia.indiatimes.com/india/kerala-off-red-alert-but-imds-rain-forecast-keeps-it-on-edge/articleshow/65456607.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65456635,width-1070,height-580,imgsize-120424,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T21:10:55Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Times Of India",
+"title": "Asian Games 2018 Live: Day One",
+"description": "Check live updates of today's matches in Asian Games 2018 on Times of India",
+"url": "http://timesofindia.indiatimes.com/sports/asian-games/live-updates-of-asian-games-2018/liveblog/65457216.cms",
+"urlToImage": "https://static.toiimg.com/photo/msid-65457216/65457216.jpg?91858",
+"publishedAt": "2018-08-18T19:24:23Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Radheshyam Jadhav",
+"title": "In Vajpayee's last rites, these women find new hope - Times of India",
+"description": "India News: A heartbroken yet hopeful nation watched as foster daughter Namita Kaul Bhattacharya performed the last rites of former Prime Minister A B Vajpayee's .",
+"url": "http://timesofindia.indiatimes.com/india/in-vajpayees-last-rites-these-women-find-new-hope/articleshow/65456826.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65456834,width-1070,height-580,imgsize-126690,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T16:03:04Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Namita Devidayal",
+"title": "3 years after man died, his son is born - Times of India",
+"description": "India News: Exactly three years after a young marketing consultant lost her husband in a car accident, she held his newborn baby in the maternity ward of Jaslok H",
+"url": "http://timesofindia.indiatimes.com/india/3-years-after-man-died-his-son-is-born/articleshow/65456762.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65456775,width-1070,height-580,imgsize-118950,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T15:22:48Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Vishwa Mohan",
+"title": "MPs, IMD had alerted Kerala, Centre of impending disaster - Times of India",
+"description": "India News: Over three weeks ago, MPs from the state, cutting across party lines, raised the critical issue of the state’s preparedness to battle such a calamity",
+"url": "http://timesofindia.indiatimes.com/india/mps-imd-had-alerted-kerala-centre-of-impending-disaster/articleshow/65456682.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65456701,width-1070,height-580,imgsize-138782,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T14:20:58Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": null,
+"title": "Seated next to PoK 'prez', Sidhu hugs Pak army chief, sparks row - Times of India",
+"description": "India News: Navjot Sidhu became the centre of a controversy by agreeing to park himself on a seat right next to Pakistan-occupied Kashmir \"president\" Masood Khan",
+"url": "http://timesofindia.indiatimes.com/india/seated-next-to-pok-prez-sidhu-hugs-pak-army-chief-sparks-row/articleshow/65456504.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65456545,width-1070,height-580,imgsize-121694,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-18T13:32:16Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "महाराष्ट्र टाइम्स.कॉम",
+"title": "LIVE एशियाड २०१८: महिला कबड्डीत भारत विजयी",
+"description": "आशियाई क्रीडा स्पर्धा २०१८ चं शनिवारी शानदार उद्घाटन झालं. भारताचे ८०४ स्पर्धक या स्पर्धेत सहभागी झाले आहेत.  इंडोनेशियात जकार्तातीली पालेमबांग येथे या स्पर्धा होत आहेत. जाणून घेऊयात आज शुभारंभाच्या दिवशी भारताचे कोणकोणते स्पर्धक कशी कामगिरी बजावतात ते...",
+"url": "https://maharashtratimes.indiatimes.com/sports-news/other-sports/asian-games-2018-live-updates-18th-asian-games-in-jakarta/articleshow/65457810.cms",
+"urlToImage": "https://maharashtratimes.indiatimes.com/thumb/msid-65457892,width-473,resizemode-4/sports-news/other-sports/asian-games-2018-live-updates-18th-asian-games-in-jakarta.jpg",
+"publishedAt": "2018-08-19T03:27:22Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Sunil Gavaskar",
+"title": "Management has messed up Pujara's mind: Sunil Gavaskar",
+"description": "India losing the toss and being asked to bat first could well turn out to be a blessing in disguise for with the way the pitch has played the ball could turn for the team batting last and that won't be easy to negotiate.",
+"url": "https://timesofindia.indiatimes.com/sports/expert-column/sunil-gavaskar/management-has-messed-up-cheteshwar-pujaras-mind-sunil-gavaskar/articleshow/65457844.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457863,width-1070,height-580,imgsize-1625356,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-19T03:25:22Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "नवभारतटाइम्स.कॉम",
+"title": "कूड़ा बीनने वाला बच्चा यूं बना मशहूर फटॉग्रफर",
+"description": "कहते हैं एक तस्वीर हजार शब्दों से ज्यादा बयां कर सकती है लेकिन दिल्ली के इस फटॉग्रफर की कहानी कहने के लिए हजार शब्द भी कम पड़ जाएं।",
+"url": "https://navbharattimes.indiatimes.com/state/other-states/kolkata/world-photography-day-how-a-garbage-picker-became-an-international-photographer/articleshow/65457677.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457828,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T03:25:03Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "टाइम्स न्यूज नेटवर्क",
+"title": "शराब पीने से रोका, तो काट ली पत्नी की जुबान",
+"description": "कानपुर के कर्नलगंज इलाके में एक शख्स ने शुक्रवार देर रात अपनी पत्नी की जुबान काट ली। पत्नी ने उसकी शराब पीने की आदत को लेकर टोका-टाकी की थी। महिला को शहर के एक अस्पताल में भर्ती कराया गया है। पुलिस ने आरोपी पति के खिलाफ केस दर्ज कर लिया है, फिलहाल वह फरार है।",
+"url": "https://navbharattimes.indiatimes.com/state/uttar-pradesh/kanpur/man-chops-off-wifes-tongue-after-heated-argument/articleshow/65457800.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457819,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T03:12:45Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "एएनआई",
+"title": "दाऊद का हिसाब दखने वाला लंदन में पकड़ा गया",
+"description": "जबीर मोती पाकिस्तानी नागरिक है और वह डी-कंपनी के आर्थिक मामलों का इनचार्ज माना जाता है। खबरों के मुताबिक, दाऊद के काले चिट्ठे को जानने वाले जबीर मोती को लंदन के हिल्टन होटल से पकड़ा गया है।",
+"url": "https://navbharattimes.indiatimes.com/world/britain/dawood-ibrahim-key-aide-detained-by-uk-security-agencies-in-london/articleshow/65457770.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457795,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T03:09:53Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Dwaipayan Datta",
+"title": "India vs England: Cheteshwar Pujara loses plot in quest to raise tempo - Times of India",
+"description": "Times of India India vs England: Cheteshwar Pujara loses plot in quest to raise tempo Times of India NOTTINGHAM: Virat Kohli couldn't believe what he was seeing. In fact, he looked more shocked than Cheteshwar Pujara himself, minutes after Pujara had found an…",
+"url": "https://timesofindia.indiatimes.com/sports/cricket/india-in-england/india-vs-england-cheteshwar-pujara-loses-plot-in-quest-to-raise-tempo/articleshow/65457674.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457743,width-1070,height-580,imgsize-1670787,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-19T03:07:00Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Sagarika Ghose",
+"title": "Blog: What Modi can learn from the Vajpayee playbook",
+"description": "When Narendra Modi delivered his fifth Independence Day speech from the ramparts of Red Fort, he became one of two non-Congress PMs to have completed five years in office. The first was Atal Bihari Vajpayee....",
+"url": "https://blogs.timesofindia.indiatimes.com/bloody-mary/what-modi-can-learn-from-the-vajpayee-playbook/",
+"urlToImage": "https://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/04/Sagarika-Ghose-12.jpg",
+"publishedAt": "2018-08-19T02:57:48Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "नवभारत टाइम्स",
+"title": "अब 15 दिनों के भीतर मिलेगा आपका टैक्स रिफंड",
+"description": "इनकम टैक्स पेयर्स के लिए राहत की खबर हैं। अब इनकम टैक्स रिफंड 15 दिनों के अंदर मिलेगा। इसका मतलब है कि इनकम टैक्स रिफंड का पेमेंट टैक्स रिटर्न फाइल करने के बाद 15 दिनों के भीतर कर दिया जाएगा।",
+"url": "https://navbharattimes.indiatimes.com/business/tax/tax-news/now-income-tax-refund-in-just-15-days-of-itr-file/articleshow/65457630.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457675,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T02:57:45Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "टाइम्स न्यूज नेटवर्क",
+"title": "केरल: सभी जिलों में रेड अलर्ट खत्म, राहत कार्य में भी तेजी",
+"description": "बाढ़ से जूझ रहे केरल में अब हालात धीरे-धीरे सुधर रहे हैं। शुक्रवार और शनिवार को बारिश में कमी के बाद अब सरकार ने सूबे के सभी 14 जिलों से रेड अलर्ट हटा लिया है। 9 अगस्त के बाद यह पहला मौका है, जब रेड अलर्ट हटाया गया है।",
+"url": "https://navbharattimes.indiatimes.com/state/other-states/other-cities/kerala-off-red-alert-but-met-department-forecast-keeps-state-on-edge/articleshow/65457537.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457603,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T02:47:01Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "टाइम्स ऑफ इंडिया",
+"title": "पिता की मौत के तीन साल बाद हुआ बेटे का जन्म",
+"description": "एक मार्केटिंग कंसलटेंट की सड़क हादसे में मौत के ठीक तीन साल बाद उसके बेटे का जन्म हुआ है। युवक की पत्नी ने जसलोक हॉस्पिटल में उसके बेटे को जन्म दिया और यह सब प्यार, इंतजार और तकनीक के चलते संभव को पाया।",
+"url": "https://navbharattimes.indiatimes.com/metro/mumbai/other-news/three-years-after-man-dies-his-son-is-born/articleshow/65457560.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457588,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T02:45:20Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "नवभारत टाइम्स",
+"title": "आज हरिद्वार में अटलजी का अस्थि विसर्जन",
+"description": "पूर्व प्रधानमंत्री अटल बिहारी वाजपेयी की अस्थियां रविवार को हरकी पैड़ी में विसर्जित की जाएंगी। दोपहर साढ़े 12 बजे से डेढ़ बजे तक विसर्जन कार्यक्रम होगा।",
+"url": "https://navbharattimes.indiatimes.com/state/uttarakhand/other-cities/atal-bihari-vajpayee-asthi-visarjan-haridwar-amit-shah-to-be-present/articleshow/65457535.cms",
+"urlToImage": "https://navbharattimes.indiatimes.com/thumb/msid-65457561,width-473,resizemode-4/best-deals.jpg",
+"publishedAt": "2018-08-19T02:42:41Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Dwaipayan Datta",
+"title": "3rd Test: Kohli, Rahane guide India to 307/6 on Day 1",
+"description": "At stumps, India were 307/6, with Hardik Pandya (18) getting dismissed on the last ball of the day. Debutant Rishabh Pant, though, looked gritty and stayed unbeaten on 22.",
+"url": "https://timesofindia.indiatimes.com/sports/cricket/india-in-england/india-vs-england-england-under-pressure-after-kohli-rahane-guide-india-to-307/6/articleshow/65457544.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457567,width-1070,height-580,imgsize-1617535,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-19T02:41:21Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Maharashtra Times",
+"title": "संडे मेगाब्लॉक! तिन्ही मार्गांवर आज रखडपट्टी",
+"description": "पश्चिम, मध्य, हार्बर मार्गांवर रविवार, १९ ऑगस्ट रोजी सकाळी ११.२० ते दुपारी ४.२०पर्यंत मेगाब्लॉक घेतला जाणार असून, ओव्हरहेड वायर, सिग्नल यंत्रणा, रुळांच्या दुरुस्तीसाठीचे काम या ब्लॉकदरम्यान केले जाणार आहे.",
+"url": "https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/megablock-on-all-three-routes-today/articleshow/65443595.cms",
+"urlToImage": "https://maharashtratimes.indiatimes.com/thumb/msid-65446476,width-473,resizemode-4/maharashtra/mumbai-news/megablock-on-all-three-routes-today.jpg",
+"publishedAt": "2018-08-19T02:32:55Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Biswajyoti Brahma",
+"title": "The tag of defending champions means nothing: Harendra",
+"description": "India's hockey coach Harendra Singh is on a mission – to put the game on the path of glory again. Once hockey's superpowers, India's fortunes plummeted in the late 1970s but a revival of sorts in recent times has seen them rise to No.5 position in the world r…",
+"url": "https://timesofindia.indiatimes.com/sports/asian-games/the-tag-of-defending-champions-means-nothing-harendra-singh/articleshow/65457477.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457479,width-1070,height-580,imgsize-1528650,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-19T02:24:10Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": null,
+"title": "Strong earthquake hits off Fiji: USGS",
+"description": "The tremor hit at 12:19 pm (0019 GMT) local time 361 kilometres (224 miles) east of the Pacific nation's capital Suva, at a depth of 559 kilometres, the US seismologists said.",
+"url": "https://timesofindia.indiatimes.com/world/rest-of-world/strong-earthquake-hits-off-fiji-usgs/articleshow/65457471.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-65457472,width-1070,height-580,imgsize-116830,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2018-08-19T02:19:50Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "AFP",
+"title": "Strong earthquake hits off Fiji: USGS",
+"description": "The tremor hit at 12:19 pm (0019 GMT) local time 361 kilometres (224 miles) east of the Pacific nation's capital Suva, at a depth of 559 kilometres, the US seismologists said.",
+"url": "https://economictimes.indiatimes.com/news/international/world-news/strong-earthquake-hits-off-fiji-usgs/articleshow/65457460.cms",
+"urlToImage": "https://img.etimg.com/thumb/msid-65457459,width-1070,height-580,imgsize-121816,overlay-economictimes/photo.jpg",
+"publishedAt": "2018-08-19T02:16:56Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "नवभारत टाइम्स",
+"title": "राशिफल: इन 8 राशियों के लिए बेहतरीन रविवार",
+"description": "आज आपको आध्यात्मिक दृष्टि से अनूठी अनुभूति हो सकती है। वाणी पर संयम रखें, अन्यथा हानि हो सकती है। नए कार्य का प्रारंभ न करना ठीक रहेगा...",
+"url": "https://navbharattimes.indiatimes.com/astro/rashifal/bolen-sitare/daily-horoscope-prediction-19-august-2018-by-bejan-daruwalla-46257/",
+"urlToImage": "https://navbharattimes.indiatimes.com/astro/wp-content/uploads/2018/07/rashichackra.jpg",
+"publishedAt": "2018-08-19T02:15:16Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Grace Bains",
+"title": "9 Things No One Tells You About The Pain Of Moving Away From Home",
+"description": "Remember when you really wanted to move out of your home? The idea of freedom lured all of us. We didn’t want curfews to stop us, we wanted to make a mess without being taunted for it and we looked forward to having a space we could call our own, without any …",
+"url": "https://www.indiatimes.com/lifestyle/self/9-things-no-one-tells-you-about-the-pain-of-moving-away-from-home-351409.html",
+"urlToImage": "https://media.indiatimes.in/media/facebook/2018/Aug/moving_1534508487_800x420.jpg",
+"publishedAt": "2018-08-19T02:10:00Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Shivani Shrivastava",
+"title": "Let's Address The Emotional Gap In Male Relationships & Help Fix It",
+"description": "So dear men, let’s create a world where both men and women can cry without getting judged, a world where we can make our tea and dinner together, a world where we both share house bills and chores, a world where it's about our choices and not what society has…",
+"url": "https://www.indiatimes.com/lifestyle/let-s-address-the-emotional-gap-in-male-relationships-help-fix-it-351388.html",
+"urlToImage": "https://media.indiatimes.in/media/facebook/2018/Aug/male_relationships_1534498138_800x420.jpg",
+"publishedAt": "2018-08-19T02:10:00Z"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Arushi Lohia",
+"title": "11 Invaluable Pieces Of Love Advice For Millennials Because Good Relationships Take Hard Work",
+"description": "Yes we millenials have a lot of issues which are obviously different from what a people used to have before this crazy generation came. From our habits to relationships, millenials are struggling, dealing and surviving.With almost doing everything on their ow…",
+"url": "https://www.indiatimes.com/lifestyle/self/11-invaluable-pieces-of-love-advice-for-millennials-because-good-relationships-take-hard-work-351400.html",
+"urlToImage": "https://media.indiatimes.in/media/facebook/2018/Aug/love_1534504476_800x420.jpg",
+"publishedAt": "2018-08-19T02:10:00Z"
+}
+
+		];
+		var html = [];
+		for (var dob of articles ){
+			console.log(dob.description)
+			html.push('<li style="border-bottom:1px solid #d7d7d7;  display: flex; padding:10px 0; font-size:13px; color:#666666;"> <div style="width: 200px; height: 100px; margin-right:20px;"> <img src="'+dob.urlToImage+'" alt="'+dob.title+'" style="height:100%"/> </div> <div style="padding-bottom:10px;"> <p>'+dob.description+' </p> <a href="'+dob.url+'" target="_blank" style="text-decoration:none; color:red;">Read More</a> </div> </li>')
+		}
+		document.getElementById('newsItems').innerHTML = html.join('');
+		</script>
+	</body>
+</html>
