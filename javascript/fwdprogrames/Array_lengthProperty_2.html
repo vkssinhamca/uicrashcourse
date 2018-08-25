@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Length Property Example</title>
+	</head>
+	<body>
+		<h2>JavaScript Array using For Loop</h2>
+		<p>The best way to loop through an array is using a standard for Loop: </p>
+		<button onclick="myFunction()">Push in Array</button>
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<script>
+		var fruits, text, fLen, i, cars, l, cLen, data;
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		cars = ["BMW", "Benz", "Audi", "Honda", "Maruti"];
+		
+		text = fruits.map( fruit => `<li> ${fruit} </li>` );
+
+		document.getElementById("demo").innerHTML = text.join(' ');
+		function myFunction()
+		{
+		cars.push("Hunduai");
+		cars.push("AVON");
+		cars.push("EVON");
+		
+		data = "<ol>";
+			for(car of cars )
+			{
+				data += "<li>" + car + "</li>";
+			}
+		data += "</ol>";
+		document.getElementById("demo1").innerHTML = data;
+		}
+		</script>
+	</body>
+</html>
