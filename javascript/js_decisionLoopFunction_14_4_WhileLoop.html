@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro</title>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		
+		var names = new Array(
+				{name: 'Mintoo',
+				 address: 'New Jersy, NY, USA'
+				},
+				{name: 'Sunny'},
+				{name: 'Flaming'},
+				{name: 'Robert'},
+				{name: 'George'}
+			);
+
+        for (var pname of names)
+        {
+        	if(! pname.address){
+        		pname.address = 'Unknown';
+        	}
+
+			// if(pname.name == 'Robert'){
+
+        		console.log('Good morning ' + pname.name + ' address ' + pname.address);
+        	// }
+        	        }
+
+        /* for (var bname of names){
+         	// console.log(bname.address);
+        	if(bname.address){
+        		console.log('Good morning ' + bname.address);
+        	}
+        }*/
+
+
+		</script>
+	</body>
+</html>

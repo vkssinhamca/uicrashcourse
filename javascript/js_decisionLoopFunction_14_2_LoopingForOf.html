@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro</title>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		
+		var names = ['Mintoo', 'Sunny', 'Flaming', 'Robert', 'George'];
+
+		/*for (var name of names){
+			console.log('Good Morning '+names);
+		}
+
+*/
+		var count = 0;
+		for (var pname of names){
+			if( (names.length -1) == count ){
+				pname = 'Abhishek';
+			}
+			console.log('Freinds Name ' + pname );
+			count++;
+		}
+
+		for (var name of names){
+			console.log('Good Morning ' + name);
+		}
+		</script>
+	</body>
+</html>
