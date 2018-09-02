@@ -1,181 +1,102 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Exercise</title>
-		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
-		<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-		<!-- https://www.w3schools.com/Bootstrap/tryit.asp?filename=trybs_panels_heading&stacked=h -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- https://www.w3schools.com/Bootstrap/tryit.asp?filename=trybs_panels_heading&stacked=h -->
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row" id="allListName">
+      </div>
+        
+        
+    </div>
+    <!-- step 1  -->
+    <!-- search the html thourgh js -->
+    <!-- document.querySelector('#allListName') -->
 
-	</head>
-	
-	<body>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-primary">
-    <div class="panel-heading">George</div>
-    <div class="panel-body">New Ashok Nagar</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-success">
-    <div class="panel-heading">John</div>
-    <div class="panel-body">Dwarka</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-info">
-    <div class="panel-heading">Emma</div>
-    <div class="panel-body">Lakshmi Nagar</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-warning">
-    <div class="panel-heading">Kate</div>
-    <div class="panel-body">Mayur Vihar</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-danger">
-    <div class="panel-heading">Tom</div>
-    <div class="panel-body">Janakpuri</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-primary">
-    <div class="panel-heading">Jony</div>
-    <div class="panel-body">NFC</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-success">
-    <div class="panel-heading">Kaile</div>
-    <div class="panel-body">Badarpur</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-info">
-    <div class="panel-heading">Jesica</div>
-    <div class="panel-body">Noida</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-danger">
-    <div class="panel-heading">Frank</div>
-    <div class="panel-body">Koral Bagh</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-warning">
-    <div class="panel-heading">Mike</div>
-    <div class="panel-body">Uttam Nagar</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-primary">
-    <div class="panel-heading">Duke</div>
-    <div class="panel-body">Rohini</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-<div class="col-md-3">
-  <h2></h2>
-  <div class="panel panel-success">
-    <div class="panel-heading">Robert</div>
-    <div class="panel-body">Palam</div>
-    <div class="panel-body">Pankaj Nayal</div>
-  </div>
-</div>
-		
-		<script type="text/javascript">
-		var names = [{
-			name: 'George',
-			address: 'New Ashok Nagar',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'John',
-			address: 'Dwarka',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Emma',
-			address: 'Lakshmi Nagar',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Kate',
-			address: 'Mayur vihar',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Tom',
-			address: 'Janakpuri',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Jony',
-			address: 'NFC',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Kaile',
-			address: 'Badarpur',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Jesica',
-			address: 'Noida',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Frank',
-			address: 'Koral Bagh',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Mike',
-			address: 'Uttam Nagar',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Duke',
-			address: 'Rohini',
-			HOD: 'Pankaj Nayal'
-		},
-		{
-			name: 'Robert',
-			address: 'Palam',
-			HOD: 'Pankaj Nayal'
-		}]
+    <script type="text/javascript">
+      
+// document.querySelector('#allListName').innerHTML = ['<li>Pankaj</li>', '<li>Sushama</li>'].join(' ')
+   var names = [{
+      name: 'George',
+      address: 'New Ashok Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'John',
+      address: 'Dwarka',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Emma',
+      address: 'Lakshmi Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Kate',
+      address: 'Mayur vihar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Tom',
+      address: 'Janakpuri',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Jony',
+      address: 'NFC',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Kaile',
+      address: 'Badarpur',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Jesica',
+      address: 'Noida',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Frank',
+      address: 'Koral Bagh',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Mike',
+      address: 'Uttam Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Duke',
+      address: 'Rohini',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Robert',
+      address: 'Palam',
+      HOD: 'Pankaj Nayal'
+    },{
+      name: null,
+      address: 'Palam',
+      HOD: 'Pankaj Nayal'
+    }],
+    htmlLists = [];
+    
 
-		for (var pname of names)
-        {
-        	if(pname.name){
-        		pname.address
-        		pname.HOD;
-        	}
-    document.write('Good morning '+ 'Name:' + pname.name + ' - ' + ' address: ' + pname.address + ' - ' + ' HOD:' + pname.HOD + '<br />');
-}
-		</script>
-	</body>
+
+    for (var pname of names)
+    {
+
+      if(pname.name){
+         htmlLists.push('<div class="col-md-3"> <div class="panel panel-primary"> <div class="panel-heading">'+ pname.name +'</div><div class="panel-body"><address>'+  pname.address +'</address> <h6>'+pname.HOD+' </h6> </div></div></div>');
+      }
+    }
+    document.querySelector('#allListName').innerHTML = htmlLists.join(' ')
+    </script>
+  </body>
 </html>

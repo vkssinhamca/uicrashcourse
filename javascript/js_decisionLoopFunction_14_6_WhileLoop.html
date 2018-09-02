@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- https://www.w3schools.com/Bootstrap/tryit.asp?filename=trybs_panels_heading&stacked=h -->
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-10">
+          <div class="row" id="allListName" style="display: block">
+            
+          </div>
+          <div class="adduser" id="addingUser"  style="display: none">
+            <form name="addingUserForm" onsubmit="addUserIntoArray(event)">
+              <div class="form-group">
+                <label for="userName1">User Name</label>
+                <input type="text" class="form-control" id="userName1" placeholder="Name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="hodName1">Hod Name</label>
+                <input type="text" class="form-control" id="hodName1" placeholder="HOD Name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="address1">Address</label>
+                <input type="text" class="form-control" id="address1" placeholder="Address" required="required">
+              </div>
+              
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button type="button" class="btn btn-danger" onclick="closeForm()">Close Form</button>
+
+            </form>
+          </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" id="addUserBtn" onclick="showForm()">
+                Add User
+            </button>
+
+        </div>
+
+      </div>
+        
+        
+    </div>
+    <!-- step 1  -->
+    <!-- search the html thourgh js -->
+    <!-- document.querySelector('#allListName') -->
+
+    <script type="text/javascript">
+      
+// document.querySelector('#allListName').innerHTML = ['<li>Pankaj</li>', '<li>Sushama</li>'].join(' ')
+   var names = [{
+      name: 'George',
+      address: 'New Ashok Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'John',
+      address: 'Dwarka',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Emma',
+      address: 'Lakshmi Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Kate',
+      address: 'Mayur vihar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Tom',
+      address: 'Janakpuri',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Jony',
+      address: 'NFC',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Kaile',
+      address: 'Badarpur',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Jesica',
+      address: 'Noida',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Frank',
+      address: 'Koral Bagh',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Mike',
+      address: 'Uttam Nagar',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Duke',
+      address: 'Rohini',
+      HOD: 'Pankaj Nayal'
+    },
+    {
+      name: 'Robert',
+      address: 'Palam',
+      HOD: 'Pankaj Nayal'
+    },{
+      name: null,
+      address: 'Palam',
+      HOD: 'Pankaj Nayal'
+    }],
+    htmlLists = [];
+    
+    function addUserIntoArray(event){
+      event.preventDefault();
+      var userObj = {};
+        userObj.name = addingUserForm.userName1.value;
+        userObj.address = addingUserForm.address1.value;
+        userObj.HOD = addingUserForm.hodName1.value;
+
+      names.push(userObj); 
+      addingUserForm.reset()
+       htmlrender(); 
+
+    }
+    function closeForm(){
+
+        document.querySelector('#addingUser').style.display = 'none';
+        document.querySelector('#allListName').style.display = 'block';
+    }
+
+    function showForm(){
+
+        document.querySelector('#addingUser').style.display = 'block';
+        document.querySelector('#allListName').style.display = 'none';
+    }
+
+
+    function htmlrender(){
+        for (var pname of names)
+        {
+
+          if(pname.name){
+             htmlLists.push('<div class="col-md-3"> <div class="panel panel-primary"> <div class="panel-heading">'+ pname.name +'</div><div class="panel-body"><address>'+  pname.address +'</address> <h6>'+pname.HOD+' </h6> </div></div></div>');
+          }
+        }
+        document.querySelector('#allListName').innerHTML = htmlLists.join(' ');
+    }
+    htmlrender();
+
+
+
+    </script>
+  </body>
+</html>
