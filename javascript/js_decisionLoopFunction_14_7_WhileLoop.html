@@ -135,7 +135,8 @@
     }
     function removeUser(event){
       var obj = event.currentTarget;
-      var nameInd = obj.parentNode.parentNode.parentNode.dataset['index'];
+      // var nameInd = obj.parentNode.parentNode.parentNode.dataset['index'];
+      var nameInd = obj.parentNode.parentNode.parentNode.dataset.index;
       names.splice(nameInd, 1);
       htmlrender();
     }
