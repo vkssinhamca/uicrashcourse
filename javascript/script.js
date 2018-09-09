@@ -1,25 +1,5 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Exercise</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
-    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!-- https://www.w3schools.com/Bootstrap/tryit.asp?filename=trybs_panels_heading&stacked=h -->
-  </head>
-  
-  <body>
-     <pre>
-       
-      recap of previous class
 
-      //
-      for (x of y){
-
-      }
-  </pre>
-
-  <script>
-    var x = 'I am a boy am wanst to chat with you I am ',
+var x = 'I am a boy am wanst to chat with you I am ',
        myarr = [],
        ttlArr = [];
 
@@ -52,7 +32,3 @@
       if (count > 0) {
           document.write(current + ' comes --> ' + count + ' times');
       }
-     // https://www.youtube.com/watch?v=Rx_JFOSxgpY
-  </script>
-  </body>
-</html>
