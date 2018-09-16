@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var string = new String();
+		var mydate = new Date();
+		var data = 'Random data is working ';
+		var newArr = [], crntArr = [];
+		function generateArray(data){
+
+			for(i=0; i<data.length; i++){ 
+
+				if(data[i] != ' '){
+					crntArr.push(data[i]) 
+				}
+				else {
+					 newArr.push( crntArr.join('') );
+					crntArr = []
+				}
+			}
+		}
+	</script>
+
+</body>
+</html>
