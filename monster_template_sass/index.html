@@ -21,11 +21,11 @@
 		<header>
 			<nav class="nav">
 				<div class="container">
-					<div class="flex">
+					<div class="flex flex__justify-content--space-between flex__align-items--center">
 						<div class="logo"><a href="#" class="logo__image">Logo</a></div>
 						<div class="menu-list">
 							<ul class="list-unstyle">
-								<li class="menu-list__item"><a href="" class="menu-list__menu">Home</a></li>
+								<li class="menu-list__item active"><a href="" class="menu-list__menu">Home</a></li>
 								<li class="menu-list__item"><a href="" class="menu-list__menu">Ringtones</a></li>
 								<li class="menu-list__item"><a href="" class="menu-list__menu">Download</a></li>
 								<li class="menu-list__item"><a href="" class="menu-list__menu">About</a></li>
@@ -38,12 +38,13 @@
 		</header>
 		<section>
 			<div class="heroshot">
+				<picture class="heroshot__picture">
+					<source srcset="./images/slide1.jpg" media="(min-width: 992px)" />
+					<source srcset="./images/slide1_tablet.jpg" media="(min-width: 600px)" />
+					<img src="./images/slide1_mobile.jpg" />
+				</picture>
 				<div class="heroshot__content container">
-					<picture class="heroshot__picture">
-						<source srcset="./images/slide1.jpg" media="(min-width: 992px)" />
-						<source srcset="./images/slide1_tablet.jpg" media="(min-width: 600px)" />
-						<img src="./images/slide1_mobile.jpg" />
-					</picture>
+					
 					<h1 class="header-type-1">
 					GET YOUR
 					</h1>
@@ -91,7 +92,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-4">
-						<ul>
+						<ul class="list-unstyle">
 							<li>
 								<div class="icons_wrap ">
 									<i class="material-icons">play_arrow</i>
@@ -141,7 +142,7 @@
 						
 					</div>
 					<div class="col-4">
-						<ul>
+						<ul class="list-unstyle">
 							<li>
 								<div class="icons_wrap ">
 									<i class="material-icons">play_arrow</i>
@@ -190,7 +191,7 @@
 						</ul>
 					</div>
 					<div class="col-4">
-						<ul>
+						<ul class="list-unstyle">
 							<li>
 								<div class="icons_wrap ">
 									<i class="material-icons">play_arrow</i>

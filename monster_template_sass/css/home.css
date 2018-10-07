@@ -42,6 +42,8 @@
     justify-content: space-evenly; }
   .flex.para {
     color: red; }
+  .flex__align-items {
+    align-items: center; }
 
 .material-icons {
   font-family: 'Material Icons';
@@ -83,8 +85,8 @@
 .menu-list__item {
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 600; }
-  .menu-list__item:hover a {
+  font-weight: 560; }
+  .menu-list__item:hover a, .menu-list__item.active a {
     color: #33ff9b; }
 
 .menu-list__menu {
@@ -93,9 +95,20 @@
   text-decoration: none;
   transition: all 0.2s ease-in;
   font-family: "Lato", sans-serif;
-  padding: 1rem 1.5rem; }
+  padding: 0 1rem; }
+  @media only screen and (min-width: 1200px) {
+    .menu-list__menu {
+      line-height: 100px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .menu-list__menu {
+      line-height: 100px; } }
 
 .list-unstyle {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+.heroshot {
+  position: relative; }
+  .heroshot__picture img {
+    width: 100%; }
