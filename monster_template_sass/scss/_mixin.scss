@@ -1,0 +1,15 @@
+@mixin font-size($fontSizeInPx) {
+  font-size: ($fontSizeInPx / 16) +'rem';
+}
+
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@mixin font-family($font) {
+	font-family: $font, sans-serif;	
+}
+
