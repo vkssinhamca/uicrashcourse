@@ -1,5 +1,14 @@
-@mixin font-size($fontSizeInPx) {
-  font-size: ($fontSizeInPx / 16) +'rem';
+$base: 100%;
+@function get-value($n) {
+   @return $n / ($n * 0 + 1);
+}
+
+@mixin font-size($font-size) {
+   $base-size: get-value($base / 100);
+   $base-px-size: 16 * $base-size;
+
+   font-size: $font-size;
+   font-size: (get-value($font-size) / $base-px-size) + rem;
 }
 
 

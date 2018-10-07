@@ -3,6 +3,10 @@
 @import '_mixin';
 @import '_flexbox';
 
+body {
+  font-size: 100%;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -83,9 +87,78 @@
 }
 .heroshot{
   position: relative;
+  color:$white;
+  @include respond-to($large-desktop){
+    min-height: 547px;
+  }
+  @include respond-to($tablet-landscape){
+    min-height: 547px;
+  }
+
+
   &__picture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 500px;
     img{
       width: 100%;
     }
   }
+  &__content {
+    position: relative;
+    &--wrap{
+      position: absolute;
+      top:0;
+      left: 0;
+      max-width: 50%;
+    }
+  }
+
+  .header {
+    &-type-1 {
+      font-weight: 500;
+      margin:0;
+      color:$green;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+    &-type-2 {
+      margin:0;
+      font-weight: 100;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-variant-east-asian: normal;
+
+    }
+  }
+}
+
+.header {
+  @include font-family($lato);
+  &-type-1 {
+    @include font-size(75px);
+    font-weight: 500;
+  }
+  &-type-2 {
+    font: 100 45px/45px "Lato", Arial, Helvetica, sans-serif
+    /*@include font-size(45px);*/
+  }
+
+}
+.para {
+  @include font-family($lato);
+  &-type-1 {
+    @include font-size(16px);
+  }
+  &-type-2 {
+    @include font-size(14px);
+  }
+}
+
+
+.grey-text {
+  color : $grey-light;
 }
