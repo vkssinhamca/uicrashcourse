@@ -12,11 +12,10 @@
 <body>
 	<p id="demo"></p>
 	<script>
-	var userName = prompt('Enter user input');
-	var upperCase = userName.toUpperCase();
-     // document.getElementById('demo').innerHTML = upperCase;
-     document.write(upperCase);
-         </script>
-
+		var userName = prompt('Enter user input').toLowerCase();
+		var upperCase = userName[0].toUpperCase();
+	     // document.getElementById('demo').innerHTML = upperCase;
+	     document.write(upperCase + userName.substr(1,) );
+     </script>
 </body>
 </html>
