@@ -80,24 +80,26 @@
       name: 'Robert',
       address: 'Palam',
       HOD: 'Pankaj Nayal'
-    },{
+    },
+    {
       name: null,
       address: 'Palam',
       HOD: 'Pankaj Nayal'
     }],
     htmlLists = [];
+    for (var pname of names)
+    {
+      if (pname.name) {
+
+      	
+      }
+
+    }
+
     
 
 
-    for (var pname of names)
-    {
-
-      if(pname.name){
-         htmlLists.push('<div class="col-md-3"> <div class="panel panel-primary"> <div class="panel-heading">'+ pname.name +'</div><div class="panel-body"><address>'+  pname.address +'</address> <h6>'+pname.HOD+' </h6> </div></div></div>');
-      }
-    }
-    document.querySelector('#allListName').innerHTML = htmlLists.join(' ')
-    //document.getElementById('allListName').innerHTML = htmlLists.join(' ')
+    
     </script>
   </body>
 </html>
