@@ -2,6 +2,7 @@
 @import '_settings';
 @import '_mixin';
 @import '_flexbox';
+@import '_button';
 
 body {
   font-size: 100%;
@@ -156,9 +157,132 @@ body {
   &-type-2 {
     @include font-size(14px);
   }
+ &-type-3 {
+    @include font-size(18px);
+    line-height: 30px;
+  }
+   
 }
 
 
 .grey-text {
   color : $grey-light;
+}
+
+
+.media-wrapper {
+  padding: $space-xxlarge 0;
+  background-color: $black-light;
+  .icons_wrap {
+      width: 170px;
+      height: 170px;
+      background-color: $green;
+      color: $white;
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      transition:all 0.25s ease-in;
+      cursor: pointer;
+      .material-icons {
+        font-size: 120px;
+        line-height: 170px;
+        transition:all 0.25s ease-in;
+        color:$black;
+
+      }
+      &:hover {
+          background-color: $black-dark-hover;
+          .material-icons {
+            color: $white;
+          } 
+      }
+   }
+   .header {
+      &-type-2 {
+        color:$white;
+      } 
+   }
+   .para {
+      &-type-1 {
+        color: $grey;
+        @include font-family($lato);
+      }
+   }
+   .more_btn {
+    margin: $space-sm 0;
+   }
+}
+
+
+.media-songs {
+  background-color: $grey-lighter;
+  @include font-family($lato);
+  .icons_wrap {
+      width: 75px;
+      height: 75px;
+      display: inline-block;
+      background-color: $white;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      border:2px solid $black;
+      transition:all 0.25s ease-in;
+      .material-icons {
+        font-size: 40px;
+        line-height: 75px;
+        transition:all 0.25s ease-in;
+        color:$black;
+        transition:all 0.25s ease-in;
+      }
+
+      &:hover {
+        background-color: $white;
+        .material-icons {
+          color:$green;
+        }
+      };
+  }
+
+  .music-label {
+    background: $green;
+    padding: 10px;
+    display: inline-block;
+    line-height: 1rem; 
+  }
+  .header {
+    &-type-2 {
+      margin: 0;
+      padding: $space-sm 0;
+    }
+  }
+  li {
+    display: table;
+
+    .icons_wrap {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .musicdetails {
+       display: table-cell;
+       vertical-align: top;
+       padding-bottom: $space-sm; 
+    }
+    .icon {
+        width: 95px;
+    }
+  }
+  .music-download {
+    @include font-size(14px);
+    padding-top: 10px;
+    color: $grey;
+  }
+}
+
+
+.row {
+  clear: both;
+}
+.col-4 {
+  width:33.3333%;
 }

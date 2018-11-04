@@ -1,0 +1,26 @@
+.more_btn {
+  display: block;
+  margin: 0 15px;
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #33ff9b;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.45s ease-in;
+  font-family: "Lato", sans-serif; }
+  
+  .more_btn .material-icons {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    transition: all 0.45s ease-in; }
+  
+  .more_btn:hover {
+    color: #33ff9b;
+    background-color: white; }
+    .more_btn:hover .material-icons {
+      color: #333333; }
