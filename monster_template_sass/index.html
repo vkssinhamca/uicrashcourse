@@ -5,6 +5,7 @@
 		<title>Scss Sass tutorial</title>
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="./css/home.css">
+		<link rel="stylesheet" type="text/css" href="./css/grid.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!-- https://stackoverflow.com/questions/42518621/node-sass-is-not-recognized-by-command-line -->
 <!-- https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46 -->
@@ -17,6 +18,8 @@
 <!-- node-sass --output-style compressed -o ./css/ ./scss/ --watch -->
 		<!-- https://sass-lang.com/guide -->
 		<!-- https://www.templatemonster.com/demo/51999.html -->
+		<!-- https://www.youtube.com/watch?v=St5B7hnMLjg&list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA -->
+		<!--https://www.youtube.com/watch?v=dvlUE0pXB0U&list=PLTd35OoSveP1UoS1SOAVVarQDstRvqp9C&index=2-->
 	</head>
 	<body>
 		<header>
@@ -55,85 +58,98 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="media-wrapper">
 			<div class="container">
-				<h2 class="header header-type-2"><strong class="header header-type-3">POPULAR</strong> RINGTONES</h2>
-				<div class="row">
+				<div class="row flex flex__justify-content--space-between">
 					<div class="col-4">
 						<div class="icons_wrap ">
 							<i class="material-icons">file_download</i>
 						</div>
-						<div class="header header-type-2">DOWNLOAD</div>
-						<div class="header header-type-3">RINGTONES</div>
+						<div class="header header-type-2">DOWNLOAD <br/> <span class="bold">RINGTONES</span></div>
 						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
 					</div>
 					<div class="col-4">
 						<div class="icons_wrap ">
 							<i class="material-icons">library_music</i>
 						</div>
-						<div class="header header-type-2">DOWNLOAD</div>
-						<div class="header header-type-3">RINGTONES</div>
+						<div class="header header-type-2">CREATE AND <br/> <span class="bold">SHARE</span></div>
 						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
 					</div>
 					<div class="col-4">
 						<div class="icons_wrap ">
 							<i class="material-icons">phone_iphone</i>
 						</div>
-						<div class="header header-type-2">DOWNLOAD</div>
-						<div class="header header-type-3">RINGTONES</div>
+						<div class="header header-type-2">FREE AND <br/> <span class="bold">EASY</span></div>
 						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
 					</div>
 				</div>
+				<a href="#" class="more_btn">Make your own iPhone and MP3 ringtones <i class="material-icons">fast_forward</i></a>
 			</div>
 		</section>
-		<section>
+		<section class="media-songs">
 			<div class="container">
-				<div class="row">
+				<h2 class="header header-type-2"><strong class="header header-type-3">POPULAR</strong> RINGTONES</h2>
+				<div class="row flex flex__justify-content--space-between">
 					<div class="col-4">
 						<ul class="list-unstyle">
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 						</ul>
@@ -142,48 +158,63 @@
 					<div class="col-4">
 						<ul class="list-unstyle">
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 						</ul>
@@ -191,48 +222,63 @@
 					<div class="col-4">
 						<ul class="list-unstyle">
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 							<li>
-								<div class="icons_wrap ">
-									<i class="material-icons">play_arrow</i>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
 								</div>
 								<div class="musicdetails">
 									<div class="music-label">Rap/Hip Hop</div>
 									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
 								</div>
 							</li>
 						</ul>
