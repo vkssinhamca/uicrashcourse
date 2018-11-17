@@ -25,3 +25,14 @@ $base: 100%;
 $gridWidthPercent: 8.333333333333333;
 
 
+
+@mixin border-radius($r, $x-dir) {
+    @if $x-dir == 'left' {
+      border-top-left-radius: $r; 
+    }
+    @if $x-dir == 'right' {
+      border-top-right-radius: $r; 
+    }
+  }
+  
+  
