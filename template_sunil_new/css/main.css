@@ -1,0 +1,229 @@
+body{
+  font-family: 'Varela Round', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.para {
+  text-align: right;
+  color: white;
+  font-size:12pt;
+
+}
+.para1 {
+  text-align: center;
+  color: white;
+  font-size: 60pt;
+  font-family: "Times New Roman", Times, serif;
+}
+.para2{
+  text-align: center;
+  color: white;
+  font-size: 22pt;
+}
+.fuild-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.list-unstyle {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.bg-heroshot{
+  background: #6527ae url('../images/mt-1377-home2-header-bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 150vh;
+  min-height: 600px; 
+}
+.bg-heroshot1{
+  background: url('../images/mt-1377-home2-parallax1.jpg') no-repeat center center;
+  background-size: cover;
+  height:50px;
+  width:100%;
+  padding:150px;
+  border-radius:1px;
+
+}
+
+.center {
+  text-align: center;
+}
+.flex1 {
+	padding-left:200px;
+	text-align:center;
+	width: 950px;
+height: 350px;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex2 {
+	padding-top:150px;
+	display: -webkit-flex;
+	height:50px;
+	width:auto;
+	color:white;
+    display: flex;
+    flex-direction: row;
+}
+
+.div1 {
+    width: 50px;
+    height: 50px;
+}
+.green{
+	text-align:center;
+	color:green;
+	font-weight:bold;}
+.figure_border{
+    border: 3px solid grey;
+    height:360px;
+    width:350px;
+    margin: auto;    
+    padding-left: 15px;
+    padding-right: 15px;
+padding:10px 5px 15px 20px;
+border-radius: 15px;
+}
+.figure_border1{
+    border: 3px solid grey;
+    height:540px;
+    width:350px;
+    margin: auto;    
+    padding-left: 10px;
+    padding-right: 15px;
+padding:10px 5px 15px 20px;
+border-radius: 15px;
+}
+
+
+.text1{
+border: 3px solid white;
+height:auto;
+width:auto;
+border-radius: 115px;
+}
+.text2{
+height:auto;
+width:600px;
+padding-left:50px;
+}
+.bg-white1{
+	background-color:white;
+	padding:400px;
+	margin:auto;
+}
+.bg-blue-darker1 {
+    background-color: rgb(75, 24, 127);
+    padding-top:auto;
+    height:100%;
+    width:100%;
+    
+}
+.bg-heroshot2{
+  background: url('../images/mt-1377-home-bg6.png') no-repeat center center;
+  height:50px;
+  width:100%;
+  padding-left:150px;
+  border-radius:1px;
+
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.rotate-90deg {
+  transform: rotate(90deg);
+}
+
+.secondary-header ul li ul li{
+  margin-right:20px;
+}
+
+.secondary-header ul li ul.list-service li{
+  margin-right: 32px;
+  padding-top: 4px;
+}
+.secondary-header {
+  padding-bottom: 51px;
+}
+
+.secondary-header > ul > li > ul > li:first-child{
+  margin-right:100px;
+}
+
+.secondary-header a {
+  
+  text-decoration: none;
+  font-size: 17px;
+}
+.para-sub-heading-title {
+  font-family: Lato, sans-serif;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color:#2db8f5;
+}
+
+
+.head-heading-title {
+  font-size:49px;
+  text-align: center;
+  margin: 0;
+  line-height: 0.8;
+  margin-bottom: 46px;
+  font-weight: normal;   
+}
+.para-content-heading {
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.para-content {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.content-box-wrap figure{
+  width: 25%;
+}
+
+.bg-patterns {
+  padding-top: 20px;
+  background-image: url('../images/patterns_img.png');
+  background-position: -270px;
+}
+.right-box-content {
+  padding-left: 150px;
+  margin-top: 30px
+}
+.right-box-content p {
+  margin-bottom: 20px;
+  color:#242424;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+}

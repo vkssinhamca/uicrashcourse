@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.35s ease-in;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border:0;
+    background: #fff;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.btn.btn-primary {
+    color:#fff;
+    background-color: #23bc3d;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.heroshot-btn .btn.btn-primary {
+    border:2px solid #23bc3d;
+}
+
+.heroshot-btn .btn.btn-primary:hover, .heroshot-btn .btn.btn-secondary:hover {
+    border:2px solid #001835;
+}
+.btn.btn-primary:hover {
+    background-color: #001835;
+}
+
+
+.btn.btn-secondary {
+    color:#fff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    border:2px solid #fff;
+}
+.btn.btn-secondary:hover {
+    background-color: #001835;
+}
+
+.btn.btn-large{
+    font-size: 14px;
+    padding:20px 35px;
+}

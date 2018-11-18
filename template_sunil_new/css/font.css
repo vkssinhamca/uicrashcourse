@@ -1,0 +1,57 @@
+.font-sm {
+	font-size: 13px;
+}
+.font-md-14 {
+	font-size: 14px;
+}
+.font-md-16 {
+	font-size: 16px;
+}
+.font-md {
+	font-size: 18px;
+}
+
+.font-lg-20 {
+	font-size: 20px;
+}
+
+.font-lg-22 {
+	font-size: 22px;
+}
+
+.font-lg-24 {
+	font-size: 24px;
+}
+
+.font-lg-30 {
+	font-size: 30px;
+}
+
+
+.font-lg-32 {
+	font-size: 32px;
+}
+
+
+.font-lg {
+	font-size: 36px;
+}
+
+
+.font-xl-42 {
+	font-size: 42px;
+}
+
+.font-xl {
+	font-size: 49px;
+}
+
+.font-xxl-80 {
+	font-size: 80px;
+}
+
+.font-xxl {
+	font-size: 90px;
+	font-weight: 100;
+}
+
