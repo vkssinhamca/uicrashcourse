@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/color.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="./scripts/swiper.min.js"></script>
 </head>
 <!-- https://www.templatemonster.com/demo/66381.html -->
 
@@ -59,7 +61,7 @@
                             <ul class="list-unstyle flex flex__justify-content--space-between">
                                 <li>
                                     <ul class="list-unstyle flex flex__justify-content--space-between list-service">
-                                        <li><a href="#" class="white">Service</a></li>
+                                        <li><a href="#" class="white">Services</a></li>
                                         <li><a href="#" class="white">Pricing</a></li>
                                         <li><a href="#" class="white">Contacts</a></li>
                                         <li><a href="#" class="white">All blocks</a></li>
@@ -154,107 +156,135 @@
                 <p class="para-sub-heading-title"><i>What We Do</i></p>
             </div>
             <h1 class="head-heading-title">Marketon Content Marketing</h1>
-            
+
             <div class="flex flex__align-items--flex-start">
-                    <figure class="column1">
-                            <img src="images/mt-1377-home2-icon1.png" alt="" />
-                    </figure>
-                    <div class="right-box-content">
-                        <p>Are you looking for ways to increase conversions but having a hard time turning visits into  sales?</p>
-                        <p>Our content marketing services were developed with you in mind. By cooperating with us,  our   clients can concentrate on running their businesses instead of content writing and distribution.</p>
-                        <p>We create videos, infographics, data visualizations, and more to engage your visitors.</p>
-                        
-                        <div class="heroshot-btn">
-                                <button class="btn btn-primary btn-large">contact us</button>
-                         </div> 
+                <figure class="column1">
+                    <img src="images/mt-1377-home2-icon1.png" alt="" />
+                </figure>
+                <div class="right-box-content">
+                    <p>Are you looking for ways to increase conversions but having a hard time turning visits into
+                        sales?</p>
+                    <p>Our content marketing services were developed with you in mind. By cooperating with us, our
+                        clients can concentrate on running their businesses instead of content writing and
+                        distribution.</p>
+                    <p>We create videos, infographics, data visualizations, and more to engage your visitors.</p>
+
+                    <div class="heroshot-btn">
+                        <button class="btn btn-primary btn-large">contact us</button>
                     </div>
-                          
+                </div>
+
             </div>
         </div>
     </div>
-    <div class="bg-white">
-        <div class="para blue1 center flex__justify-content--space-between">
-            <p>Why Choose Us</p>
+    <div class="bg-white container">
+        <div class="para2 blue1 center mt-30">
+            <p class="para-sub-heading-title"><i>Why Choose Us</i></p>
         </div>
-        <h1 class="font-lg-26 center">Guaranteed PR and Reputation Growth</h1>
-    </div>
-    <div class="flex1">
-        <div class="figure_border">
-            <figure class="">
-                <img src="images/mt-1377-home2-choose1.png" alt="" />
-                <figcaption>
-                    <p class="font-lg-24">We Make Money</p>
-                    <p class="green">----</p>
-                    <p>We&#x2019;ll make you more money with customer-focused, convincing copy that sells harder.</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="figure_border">
-            <figure class="flex__direction--row">
-                <img src="images/mt-1377-home2-choose2.png" alt="" />
-                <figcaption>
-                    <p class="font-lg-24">Affordable Prices</p>
-                    <p class="green">----</p>
-                    <p>We are offering high-quality web copywriting services that will not cost you the earth.</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="figure_border">
-            <figure class="">
-                <img src="images/mt-1377-home2-choose3.png" alt="" />
-                <figcaption>
-                    <p class="font-lg-24">Focus on Results</p>
-                    <p class="green">----</p>
-                    <p>It&#x2019;s all about what adds value for you and your business. Above all, we want our words to
-                        work for you.</p>
-                </figcaption>
-            </figure>
-        </div>
-    </div>
-    <div class="flex2">
-        <div class="bg-heroshot1">
-            <div class="text1">
-                <p class="font-lg-30 text2"><b>Watch Our Video Presentation</b></p>
-                <p class="font-md-14 text2">Watch a short video to know more about our company and services, and to
-                    choose the best marketing solution for your business.</p>
+        <h1 class="head-heading-title">Guaranteed PR and Reputation Growth</h1>
+
+        <div class="flex flex__align-items--flex-start">
+
+            <div class="figure_border">
+                <figure class="center">
+                    <img src="images/mt-1377-home2-choose1.png" alt="" />
+                    <figcaption>
+                        <div class="font-lg-30 box-center mt-20">We Make Money</div>
+                        <div class="saprator"></div>
+                        <p class="sub-title">We&#x2019;ll make you more money with customer-focused, convincing copy
+                            that sells harder.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="figure_border">
+                <figure class="center">
+                    <img src="images/mt-1377-home2-choose2.png" alt="" />
+                    <figcaption>
+                        <div class="font-lg-30 box-center mt-20">Affordable Prices</div>
+                        <div class="saprator"></div>
+                        <p class="sub-title">We are offering high-quality web copywriting services that will not cost
+                            you the earth.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="figure_border">
+                <figure class="center">
+                    <img src="images/mt-1377-home2-choose3.png" alt="" />
+                    <figcaption>
+                        <div class="font-lg-30 box-center mt-20">Focus on Results</div>
+                        <div class="saprator"></div>
+                        <p class="sub-title">It&#x2019;s all about what adds value for you and your business. Above
+                            all, we want our words to
+                            work for you.</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
-    <div class="bg-white1">
-        <div class="font-md-16 para2 blue1 center">
-            <p><i>What People Say</i></p>
-        </div>
-        <h1 class="font-lg-24 center">Client Reviews</h1>
-        <div class="">
-            <a class=""><img src="images/mt-1377-home2-testimonials1_3.png" alt="mt-1377-home2-testimonials1.png"></a>
-            <div class="">
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class="">“Marketon allows me to not worry about the whole section of
-                    marketing things that otherwise would need a team of employees”</p>
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class=""><span class="">Joe Martin</span></p>
+    <div class="bg-pattern1">
+        <div class="container video-presentation">
+            <div class="text1 flex ">
+                <div >
+                        <h1 class="head-heading-title">Watch Our Video Presentation</h1>
+                        <p class="para-video">Watch a short video to know more about our company and services, and to
+                            choose the best marketing solution for your business.</p>
+                </div>
+                <div class="video-icon">
+                    <span class="fa fa-play-circle">
+                    </span>    
+                </div>
             </div>
         </div>
-        <div class="">
-            <a class=""><img src="images/mt-1377-home2-testimonials2_2.png" alt="mt-1377-home2-testimonials2.png"></a>
-            <div class="">
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class="">“The folks at Marketon have quickly become an essential part of
-                    our team. We really appreciate their enthusiasm for what we do.”</p>
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class=""><span class="">Kraig Williams</span></p>
+    </div>
+    <div class="bg-white bg-pattern2">
+        <div class="container"> 
+
+        </div>   
+            <div class="para2 blue1 center mt-30">
+                <p class="para-sub-heading-title"><i>What People Say</i></p>
             </div>
-        </div>
-        <div class="">
-            <a class=""><img src="images/mt-1377-home2-testimonials3.png" alt="mt-1377-home2-testimonials3.png"></a>
-            <div class="">
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class="">“This company has given us some huge AdWords and PPC wins that
-                    have resulted in noticeable revenue gains.”</p>
-                <p style="text-align: center;" class="">&nbsp;</p>
-                <p style="text-align: center;" class=""><span class="">Phillip Woods</span></p>
+            <h1 class="head-heading-title">Client Reviews</h1>
+            <div class="swiper-container author-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="center">
+                            <img src="images/mt-1377-home2-testimonials1_3.png" alt="mt-1377-home2-testimonials1.png">
+                        </div>
+                        <div class="center">
+                            <p class="center">“Marketon allows me to not worry about the whole section of
+                                marketing things that otherwise would need a team of employees”</p>
+                            <p class="author-name"><span class="">Joe Martin</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="center">
+                                <img src="images/mt-1377-home2-testimonials2_2.png" alt="mt-1377-home2-testimonials2.png">
+                            </div>
+                            <div class="center">
+                                <p class="center">“The folks at Marketon have quickly become an essential part of
+                                    our team. We really appreciate their enthusiasm for what we do.”</p>
+                                <p class="author-name"><span class="">Kraig Williams</span></p>
+                            </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="center">
+                                <img src="images/mt-1377-home2-testimonials3.png" alt="mt-1377-home2-testimonials3.png">
+                            </div>
+                            <div class="center">
+                                <p class="center">“This company has given us some huge AdWords and PPC wins that
+                                    have resulted in noticeable revenue gains.”</p>
+                                <p class="author-name"><span class="">Phillip Woods</span></p>
+                            </div>
+
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
-        </div>
     </div>
     <div class="bg-blue-darker1">
         <h1 class="font-lg-24 bg-blue-darker1">Our Prices</h1>
@@ -356,6 +386,29 @@
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2DDEpP-PpYnRZrBuvmQolgNf9y7jbKBo&callback=initMap"
             async defer></script>
+
+        <script>
+            // slider initialization
+            window.addEventListener('load', function(){
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination'
+                        // type: 'fraction',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    });
+
+
+                var swiper = new Swiper('.author-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                });
+            })
+        </script>
 </body>
 
 </html>
