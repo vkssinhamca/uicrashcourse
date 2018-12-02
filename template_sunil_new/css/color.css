@@ -24,6 +24,11 @@
 .bg-blue-darker {
     background-color: rgb(75, 24, 127);
 }
+.bg-blue-medium-dark {
+    background-color:#532AA2;
+}
+
+
 .bg-blue {
 	background-color: #6427af;
 }
@@ -52,4 +57,8 @@
 }
 .bg-grey{
 	background-color:#e3eaf3;
+}
+
+.gray-light {
+	color:#bfcfe3;
 }
