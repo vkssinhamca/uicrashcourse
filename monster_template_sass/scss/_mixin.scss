@@ -1,0 +1,38 @@
+$base: 100%;
+@function get-value($n) {
+   @return $n / ($n * 0 + 1);
+}
+
+@mixin font-size($font-size) {
+   $base-size: get-value($base / 100);
+   $base-px-size: 16 * $base-size;
+
+   font-size: $font-size;
+   font-size: (get-value($font-size) / $base-px-size) + rem;
+}
+
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@mixin font-family($font) {
+	font-family: $font, sans-serif;	
+}
+
+$gridWidthPercent: 8.333333333333333;
+
+
+
+@mixin border-radius($r, $x-dir) {
+    @if $x-dir == 'left' {
+      border-top-left-radius: $r; 
+    }
+    @if $x-dir == 'right' {
+      border-top-right-radius: $r; 
+    }
+  }
+  
+  

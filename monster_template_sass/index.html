@@ -1,0 +1,296 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- https://www.sassmeister.com/ -->
+		<title>Scss Sass tutorial</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/home.css">
+		<link rel="stylesheet" type="text/css" href="./css/grid.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<!-- https://stackoverflow.com/questions/42518621/node-sass-is-not-recognized-by-command-line -->
+<!-- https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46 -->
+		<!-- https://www.npmjs.com/package/node-sass -->
+		<!-- https://nodejs.org/en/download/ -->
+<<<<<<< HEAD
+		<!-- npm i node-sass -g -->
+		<!-- node-sass -v -->
+		<!-- node-sass --output-style -o ./css/ ./sass/style.scss --watch -->
+=======
+		<!-- step1-> npm i node-sass -g -->
+		<!-- step2-> node-sass -v -->
+		<!-- node-sass --output-style -o ./css/ ./scss/style.scss --watch -->
+>>>>>>> 2d6cf0d5fea5b6e9194dcd560e234395bc95d472
+<!-- node-sass --output-style -o ./css/ ./scss/ --watch -->
+<!-- node-sass --output-style compressed -o ./css/ ./scss/ --watch -->
+		<!-- https://sass-lang.com/guide -->
+		<!-- https://www.templatemonster.com/demo/51999.html -->
+		<!-- https://www.youtube.com/watch?v=St5B7hnMLjg&list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA -->
+		<!--https://www.youtube.com/watch?v=dvlUE0pXB0U&list=PLTd35OoSveP1UoS1SOAVVarQDstRvqp9C&index=2-->
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="container">
+					<div class="flex flex__justify-content--space-between flex__align-items--center">
+						<div class="logo"><a href="#" class="logo__image">Logo</a></div>
+						<div class="menu-list">
+							<ul class="list-unstyle">
+								<li class="menu-list__item active"><a href="" class="menu-list__menu">Home</a></li>
+								<li class="menu-list__item"><a href="" class="menu-list__menu">Ringtones</a></li>
+								<li class="menu-list__item"><a href="" class="menu-list__menu">Download</a></li>
+								<li class="menu-list__item"><a href="" class="menu-list__menu">About</a></li>
+								<li class="menu-list__item"><a href="" class="menu-list__menu">Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<div class="heroshot">
+				<picture class="heroshot__picture">
+					<source srcset="./images/slide1.jpg" media="(min-width: 992px)" />
+					<source srcset="./images/slide1_tablet.jpg" media="(min-width: 600px)" />
+					<img src="./images/slide1_mobile.jpg" />
+				</picture>
+				<div class="heroshot__content container">
+					<div class="heroshot__content--wrap">
+						<h1 class="header header-type-1">GET YOUR</h1>
+						<h4 class="header header-type-2">PHONE TO SOUND DIFFERENT</h4>
+						<p class="para para-type-2">
+							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="media-wrapper">
+			<div class="container">
+				<div class="row flex flex__justify-content--space-between">
+					<div class="col-4">
+						<div class="icons_wrap ">
+							<i class="material-icons">file_download</i>
+						</div>
+						<div class="header header-type-2">DOWNLOAD <br/> <span class="bold">RINGTONES</span></div>
+						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+					</div>
+					<div class="col-4">
+						<div class="icons_wrap ">
+							<i class="material-icons">library_music</i>
+						</div>
+						<div class="header header-type-2">CREATE AND <br/> <span class="bold">SHARE</span></div>
+						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+					</div>
+					<div class="col-4">
+						<div class="icons_wrap ">
+							<i class="material-icons">phone_iphone</i>
+						</div>
+						<div class="header header-type-2">FREE AND <br/> <span class="bold">EASY</span></div>
+						<p class="para-type-1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+					</div>
+				</div>
+				<a href="#" class="more_btn">Make your own iPhone and MP3 ringtones <i class="material-icons">fast_forward</i></a>
+			</div>
+		</section>
+		<section class="media-songs">
+			<div class="container">
+				<h2 class="header header-type-2"><strong class="header header-type-3">POPULAR</strong> RINGTONES</h2>
+				<div class="row flex flex__justify-content--space-between">
+					<div class="col-4">
+						<ul class="list-unstyle">
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyle">
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyle">
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<div class="icons_wrap ">
+										<i class="material-icons">play_arrow</i>
+									</div>
+								</div>
+								<div class="musicdetails">
+									<div class="music-label">Rap/Hip Hop</div>
+									<div class="para-type-3">Lorem ipsum dolor sit amet conse ctetur adipisicing</div>
+									<div class="music-download">26,769 downloads</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
