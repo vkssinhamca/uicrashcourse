@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro</title>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+		<link href="../bootstrap_learn/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap_learn/css/custom.css" rel="stylesheet">
+	</head>
+	<body>
+		<div style="margin-top: 20pt;"></div>
+		
+		<form class="col-md-3"></form>
+		<form class="col-md-9" name="example" class="form-group">
+		<input type="text" size="20" name="calculator">
+		<input style="font-size: 12pt;" type="button" name="B1" value="Calculate" onclick="cal()">
+		<input style="font-size: 12pt;" type="reset" name="B2" value="Reset">
+		<span class="text-danger" style="font-size: 12pt;"><b>Answer:</b></span> <input type="text" size="20" name="answer">
+		</form>
+
+		<script type="text/javascript">
+			function cal()
+			{
+				document.example.answer.value=
+				eval(document.example.calculator.value)
+			}
+		</script>
+	
+<!-- 	  <input type="button" onclick="myfunction()" value="Click me"></input> 
+	 <script type="text/javascript">
+	 	function myfunction(){
+       var str = prompt("Hi ! My name is Abhishek and whats your name", "Arnav")
+       alert ("Nice to meet you " + str + "!")
+
+	 	}
+	 	 </script>
+ -->	 	
+	 	<!-- <script type="text/javascript">
+	 	var myString = prompt("Enter some text", "Hello world!");
+	 	switch (myString)
+	 	{
+	 		case "U":
+	 		document.write("First character was upper case");
+	 		break;
+	 		case "L":
+	 		document.write("First character was lower case");
+	 		break;
+	 		case "N":
+	 		document.write("First character was number");
+	 		break;
+	 		default:
+	 		document.write("First character was a character or a number"); 
+	 	}	
+	 	</script>
+ -->
+	<!-- <input type="button" onclick="myfun()" name="button" value="Click me"></input>
+	<script type="text/javascript">
+
+		function myfun(){
+		var ans = confirm("You want to see website click ok button")
+		if (ans)
+		{
+			alert("Welcome to website")
+			window.location = "https://www.google.com/"
+
+		}
+		else{
+			alert("Sorry! you click on cancel button")
+		}
+}
+	</script> -->
+
+	 </body>
+</html>
