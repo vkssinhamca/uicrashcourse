@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*        function addTwoNumber(x,y){
+            return x + y ;
+        }
+
+*/
+        function checkCharAt(string){
+
+            var output = 'O';
+            var stringCharAtZero = string.charCodeAt(0);
+
+            if( stringCharAtZero >= 'A'.charCodeAt(0) &&   stringCharAtZero <= 'Z'.charCodeAt(0) ){
+               output = 'U';
+            }
+
+            else if( stringCharAtZero >= 'a'.charCodeAt(0) &&   stringCharAtZero <= 'z'.charCodeAt(0) ){
+                output = 'L';
+            }
+
+            else if( stringCharAtZero >= '0'.charCodeAt(0) &&   stringCharAtZero <= '9'.charCodeAt(0) ){
+                output = 'N';
+            }
+            return output;
+           }
+
+           var stringData = prompt('enter your message', 'Hello');
+           var typeCharData = checkCharAt(stringData);
+
+           switch(typeCharData) {
+            case 'U':
+                    document.write("It is upper case");
+                    break;
+            case 'L':
+                document.write("It is lower case");
+                break;     
+            case 'N':
+                document.write("It is number");
+                break;
+            default:
+                document.write("You have not enter any character");
+           }
+        </script>
+
+
+</body>
+</html>
