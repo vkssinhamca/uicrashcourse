@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="example">
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        <button id="sortpara">sort para</button>
+    </form>
+    <script>
+
+        // default event stop
+        // step 1 value
+        // step 2 value.split(\n)
+        // step 3 array sort
+
+        // textarea value put 
+        
+        
+        var id = document.getElementById('sortpara');
+        id.addEventListener('click', function(event){
+            event.preventDefault();
+            var textareavalue = document.example.textarea.value;
+            var array = textareavalue.split('\n')
+            var reverse = array.sort().join('\n');
+            document.example.textarea.value = reverse;
+        })
+  </script>
+
+
+</body>
+</html>
